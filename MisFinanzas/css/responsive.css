@@ -1,0 +1,81 @@
+@media (max-width: 480px) {
+  .app-header__brand span {
+    display: none;
+  }
+
+  .app-header {
+    padding: 0 var(--space-sm);
+  }
+
+  .app-tab {
+    font-size: 0.7rem;
+    padding: 0 var(--space-xs);
+  }
+
+  .btn {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.75rem;
+  }
+
+  .modal {
+    max-width: 100%;
+    margin: var(--space-sm);
+    max-height: 95vh;
+  }
+
+  .modal__body {
+    padding: var(--space-md);
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.75rem;
+  }
+
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .app-header,
+  .app-tabs {
+    display: none;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .balance-display {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1a2e;
+    --color-surface: #2d3436;
+    --color-text: #dfe6e9;
+    --color-text-secondary: #b2bec3;
+    --color-border: #636e72;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-header: #1a1a2e;
+  }
+}
